@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetPal - Products</title>
+    <style>
+       
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background.jpg'); 
+            background-size: cover;
+            background-attachment: fixed; 
+        }
+
+        header {
+            background-color: #5ca0ee; 
+            display: flex; 
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 40px;
+            border-bottom: 4px solid #4a8bd6;
+        }
+
+        .logo {
+            height: 70px;
+            background-color: #FFE135; 
+            border-radius: 50%;
+        }
+
+        font {
+            color: #FFE135; 
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin: 0 15px;
+            text-transform: uppercase;
+        }
+
+      
+        .header-right {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .search-input {
+            padding: 8px;
+            border-radius: 5px;
+            border: none;
+        }
+
+
+        .page-header {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        h1 {
+            color: #FFE135;
+            font-size: 48px;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px #00000033; 
+        }
+
+        .controls {
+            display: flex;
+            justify-content: flex-end; 
+            max-width: 1200px;
+            margin: 0 auto 20px auto; 
+            padding-right: 20px;
+        }
+
+        .control-btn {
+            background-color: #4a8bd6;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            margin-left: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+       
+        .product-list {
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+            gap: 30px; 
+            max-width: 1200px;
+            margin: 0 auto 50px auto; 
+            padding: 20px;
+        }
+
+  
+        .card {
+            background-color: #5ca0ee;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            transition: transform 0.2s; 
+        }
+
+        .card:hover {
+            transform: translateY(-5px); 
+        }
+
+        .card-img {
+            width: 100%; 
+            height: 200px; 
+            object-fit: cover; 
+            background-color: white;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .product-name {
+            color: #FFE135;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #FFE135;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 15px;
+            display: block; /* Puts price on its own line */
+        }
+
+        .add-btn {
+            background-color: #0000cc; /* Dark Blue button */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            font-weight: bold;
+        }
+        .footer {
+            background-color: #5ca0ee;
+            color: #f8f814;
+            padding: 40px;
+            display: flex;
+            justify-content: space-around;
+            border-top: 4px solid #4a8bd6;
+            margin-top: 50px;
+            font-weight: 200 ;
+        }
+
+        .footer1 {
+            color: #f8f814;
+        }
+
+        .footer2 {
+            list-style: none; 
+            padding: 0;
+        }
+
+        .footer3 {
+            margin-bottom: 10px;
+        }
+
+        .titleorheading{
+            text-align: center;
+        }
+
+        .headerthings{
+            text-align: center;
+            gap: 20px;
+            color: #f8f814;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="petpal-high-resolution-logo.png" style="width: 10%;">
+        
+        <div class="headerthings">
+        <a >HOME</a>
+        <a>PRODUCTS</a>
+        <a >PET HEALTH TRACKER</a>
+        <a>ABOUT US </a>
+        </div>
+
+        <form ><input type="text" placeholder="Search " style="margin-left: 40%; text-align: center; width: 300px; height: 25 px;"> </form>
+        <div style="position: relative; gap: 5px;">
+            <img src="profile-icon.png" style="width: 5%; margin-left: 45%;">
+            <img src="cart-icon.png" style="width: 5%;  margin-left: 40%;"> 
+        </div>
+    </header>
+
+    <div class="titleorheading">
+        <h1>Products</h1>
+    </div>
+
+    <div class="controls">
+        <button class="control-btn"> Sort</button>
+        <button class="control-btn"> Filter</button>
+    </div>
+
+    
+    <div class="product-list">
+        
+        <div class="card">
+            <img src="img1.jpg" style="width: 70%;">
+            <h3 class="product-name">Chicken Dog Treats</h3>
+            <span class="price">Rs 1100</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <img src="img2.jpg" style="width: 70%;" >
+            <h3 class="product-name">Fish-flavored Cat Food</h3>
+            <span class="price">Rs 1200</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <img src="img3.jpg" style="width: 70%;">
+            <h3 class="product-name">High Protein Dog Meal</h3>
+            <span class="price">Rs 1200</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <img src="img4.jpg" style="width: 70%;" >
+            <h3 class="product-name">High-fiber Dog Food</h3>
+            <span class="price">Rs 1500</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <img src="img5.jpg" style="width: 70%; ">
+            <h3 class="product-name">Long-Lasting Chewy Bone</h3>
+            <span class="price">Rs 800</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+
+        <div class="card">
+            <img src="img6.jpg" style="width: 70%;">
+            <h3 class="product-name">Premium Tuna Delight</h3>
+            <span class="price">Rs 1300</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <img src="img7.png" style="width: 70%;">
+            <h3 class="product-name">Puppy Starter Kibble</h3>
+            <span class="price">Rs 1600</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+        <div class="card">
+            <img src="img8.png" style="width: 70%;" >
+            <h3 class="product-name">Catnip Mouse Toy</h3>
+            <span class="price">Rs 450</span>
+            <button class="add-btn">ADD TO CART</button>
+        </div>
+
+    </div>
+
+     <footer>
+        <div class="footer">
+            <img src="petpal-high-resolution-logo.png"  style="height: 60px;">
+            <p>Right Meals for the Right Companion</p>
+            <p>Follow us: Instagram | Twitter | Facebook</p>
+            <h3>PetPal</h3>
+            <ul>
+                
+                <li>Learn how to create a happy home</li>
+                <li>Healthy home for your little ones</li>
+            </ul>
+            <h3>Links</h3>
+            <ul>
+                <li>About Us</li>
+                <li>Terms of Service</li>
+                <li>Contact Us</li>
+            </ul>
+            <h3>Legal</h3>
+            <ul>
+                <li>Privacy Policy</li>
+                <li>Editorial Guidelines</li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+</html>
