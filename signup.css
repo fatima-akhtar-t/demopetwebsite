@@ -1,0 +1,126 @@
+body{
+    font-family: 'Poppins',sans-serif;
+    height: 300px;
+    width: 300px;
+    margin: 0;
+    display: flex;
+    overflow: hidden;
+}
+
+body::before{
+    content:" ";
+    position: fixed;
+    top: 0%;
+    left:0; 
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(https://i.ibb.co/11WVRbC/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+
+.welcome{
+   
+    font-family: 'Dancing Script',cursive;
+    font-size: 3rem;
+    z-index: index 10;
+    text-align: center;
+    color:#0056b3;
+    margin-top: 250px;
+    margin-bottom:40px;
+    margin-left: 150px;
+    white-space: nowrap;
+    text-shadow: 1px 1px 0px rgba(255,255,255,0.2);
+}
+
+.title{
+    color: #777;
+    font-size: 1.5 rem;
+    letter-spacing: 1px;
+    margin-bottom: 30px;
+}
+
+.container-box{
+  align-content: center;
+  
+   background-color:white;
+   width:300px;
+   height:900px
+   display=flex;
+   padding: 50px 30px;
+   text-align: center;
+   border-radius: 8px;
+   margin: 0;
+   box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.left-panel{
+  flex:2;
+  position: relative;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: cover;
+}
+
+.logo{
+     width:200px;
+     height: 200px;
+     margin-left:100px;
+     border:6px solid #ffffff;
+     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+     transition: all 0.3s ease-in-out;
+     margin-top: 100px;
+     border-radius: 50%;
+}
+
+.logo:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.4);
+    cursor:pointer;
+}
+
+.right-panel{
+    flex: 1;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width:500px;
+    height:700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,168,255,0.75);
+    min-height:100px;
+}
+
+.custom-input {
+      width: 80%; padding: 0px 10px 10px 35px;
+        border: 1px solid #ddd; background-color: #f7f7f7;
+    font-size: 0.9rem; outline: none; color: #555;
+    margin-bottom: 25px;
+   }
+
+   .custom{
+      width: 80%; padding: 0px 10px 10px 35px;
+        border: 1px solid #ddd; background-color: #f7f7f7;
+    font-size: 0.9rem; outline: none; color: #555;
+
+   }
+
+   .submit-button{
+    width: 100px;
+    height: 45px;
+    background-color: #00AAFF;
+    color: white;
+    border: none;
+
+   }
+  .submit-button:hover{
+    background-color: #008ecc;
+  }
