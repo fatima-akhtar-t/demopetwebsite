@@ -1,0 +1,82 @@
+.site-footer{
+background-color: #00AAFF;
+padding: 50px 20px;
+font-family: 'Poppins', sans-serif;
+color:white;
+width:100%;
+}
+
+.footer-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+.footer-col{
+    flex:1;
+    min-width: 200px;
+}
+
+
+
+.brand-col .footer-col img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 10px;
+}
+
+.logo img{
+    width: 150px;
+    height:150px;
+    
+}
+
+.brand-name{
+    font-family: 'Dancing Script',cursive;
+    font-size: 1.8rem;
+    color:#FDD835;
+    margin-bottom: 10px;
+}
+
+.quote{
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #FDD835;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-weight: bold;
+    margin-top: 10px;
+    font-family: 'Poppins',sans-serif;
+    color: #FDD835;
+}
+
+.icons span{
+    font-weight: bold;
+    color:#FDD835;
+}
+
+.icons img{
+    width:30px;
+    height: 27px;
+    display: block;
+    transition: transform 0.2s;
+}
+
+.icons a:hover img{
+  transform: scale(1.2);
+}
+
+

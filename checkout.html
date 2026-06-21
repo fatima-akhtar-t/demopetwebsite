@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,7 +15,7 @@
             background-attachment: fixed; 
         }
 
-    
+        /* --- Header --- */
         header {
             background-color: #5ca0ee; 
             display: flex; 
@@ -149,9 +149,11 @@
             cursor: pointer;
             text-transform: uppercase;
             font-weight: bold;
-            transition: 0.3s; 
+            transition: 0.3s; /* Smooth hover effect */
         }
 
+
+        /* --- FOOTER --- */
         .footer {
             background-color: #5ca0ee;
             color: #f8f814;
@@ -168,7 +170,7 @@
         }
 
         .footer2 {
-            list-style: none; 
+            list-style: none; /* Removes bullet points */
             padding: 0;
         }
 
@@ -183,12 +185,12 @@
     <header>
         <img src="petpal-high-resolution-logo.png" style="width: 10%;">
         
-        <div class="headerthings">
-            <a>Home</a>
-            <a>Products</a>
-            <a>Tracker</a>
-            <a>About Us</a>
-        </div>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Products</a>
+            <a href="#">Tracker</a>
+            <a href="#">About Us</a>
+        </nav>
 
         <form ><input type="text" placeholder="Search " style="margin-left: 40%; text-align: center; width: 300px; height: 25 px;"> </form>
         <div style="position: relative; gap: 5px;">
@@ -247,7 +249,7 @@
 
     <footer>
         <div class="footer">
-            <img src="petpal-high-resolution-logo.png" style="height: 60px;">
+            <img src="petpal-high-resolution-logo.png" alt="Logo" class="logo" style="height: 60px;">
             <p>Right Meals for the Right Companion</p>
             <p>Follow us: Instagram | Twitter | Facebook</p>
             <h3>PetPal</h3>
